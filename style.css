@@ -42,7 +42,7 @@ img {
 }
 
 .title-block img {
-  width: clamp(300px, 24vw, 480px);
+  width: clamp(320px, 24vw, 480px);
   height: auto;
   display: block;
 }
@@ -129,7 +129,7 @@ img {
   }
 
   .title-block img {
-    width: 200px;
+    width: 220px;
     margin: 0 auto;
   }
 
@@ -140,8 +140,8 @@ img {
   }
 
   .emblem-inner {
-    width: clamp(120px, 50vw, 200px);
-    height: clamp(120px, 50vw, 200px);
+    width: clamp(100px, 40vw, 180px);
+    height: clamp(100px, 40vw, 180px);
   }
 
   /* 日付 */
@@ -154,21 +154,21 @@ img {
   }
 
   .date-block img {
-    width: 200px;
+    width: 220px;
     margin: 0 auto;
   }
 
   /* 近日公開 */
   .coming-block {
     position: fixed;
-    bottom: 10px;
+    bottom: 0px;
     left: 0;
     right: 0;
     text-align: center;
   }
 
   .coming-block img {
-    width: 200px;
+    width: 220px;
     margin: 0 auto;
   }
 }
