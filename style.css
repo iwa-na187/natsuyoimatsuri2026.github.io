@@ -1,40 +1,13 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+const vector = document.getElementById('vector');
+let angle = 0;
+
+function rotate() {
+  angle += 0.2;
+  vector.style.transform = `rotate(${angle}deg)`;
+  requestAnimationFrame(rotate);
 }
 
-body {
-  background: #fff;
-  min-height: 100vh;
-  font-family: 'YuMincho', sans-serif;
-}
-
-/* ========== DESKTOP ========== */
-.page {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: clamp(20px, 2vw, 80px) clamp(40px, 1vw, 90px);
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "title ."
-    ". emblem"
-    "date coming";
-  position: relative;
-}
-
-/* タイトル */
-.title-block {
-  grid-area: title;
-  align-self: start;
-}
-
+rotate();
 .title-block img {
   width: clamp(300px, 24vw, 480px);
   height: auto;
