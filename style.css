@@ -136,7 +136,7 @@ body {
 
   .date-block {
     position: fixed;
-    bottom: 140px;
+    bottom: 130px;
     left: 0;
     right: 0;
     text-align: center;
@@ -149,7 +149,7 @@ body {
 
   .coming-block {
     position: fixed;
-    bottom: 20px;
+    bottom: 10px;
     left: 0;
     right: 0;
     text-align: center;
